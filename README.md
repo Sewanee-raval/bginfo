@@ -8,9 +8,9 @@ and can be found at https://www.zinox.com/archives/170
 ## Installation
 
 ### Requires
-imagemagick
-procinfo
-git (if installing via git)
+- imagemagick
+- procinfo
+- git (if installing via git)
 ### Installation
 Install files in user's $home/bin/bginfo directory
 
