@@ -1,0 +1,30 @@
+#-----------------------------------------------------------------
+#   Name:           Install bginfo
+#   Description:    Install and configure bginfo and its dependencies
+#   Author:         Raymond Val                    Date: 7/6/2023
+#   Notes:          <Notes>
+#   Revision History:
+#   Name:           Date:        Description:
+#   Raymond Val     7/6/2023    Initial Creation
+#-----------------------------------------------------------------
+---
+- name: 
+  hosts: all
+  gather_facts: false
+  become: true  
+
+  tasks:
+
+    - name: Install dependencies
+      apt:
+        name: 
+          - imagemagick
+          - procinfo
+          - git
+        state: present
+
+    - name: Git checkout bginfo
+      git:
+        repo: 'https://github.com/Sewanee-raval/bginfo'
+        dest: /opt/bginfo
+    
