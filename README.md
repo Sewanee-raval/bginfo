@@ -1,6 +1,6 @@
 # bginfo
 
-Script for displaying information on a background
+Script for displaying system information as a background image.
 
 The original design for this script comes from Vikram Khatri
 and can be found at https://www.zinox.com/archives/170
